@@ -7,7 +7,7 @@ export default async function Home() {
     <main>
       {
         response.map((comments: any) => (
-          <div>
+          <div key={comments.id}>
            
             <Link href={`/comments/${comments.id}`}>
               <h1 className="text-2xl">

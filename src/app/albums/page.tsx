@@ -7,7 +7,7 @@ export default async function Home() {
     <main>
       {
         response.map((albums: any) => (
-          <div>
+          <div key={albums.id}>
             
             <Link href={`/albums/${albums.id}`}>
               <h1 className="text-2xl">
